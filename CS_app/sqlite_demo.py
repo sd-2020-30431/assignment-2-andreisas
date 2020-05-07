@@ -11,9 +11,10 @@ cursor = conn.cursor()
 
 #cursor.execute('INSERT INTO users(first, last) VALUES(?, ?)', ('Donald', 'Trump', ))
 
-cursor.execute('SELECT * FROM users WHERE id=?', (1, ))
-row = cursor.fetchone()
+#cursor.execute('SELECT * FROM users WHERE id=?', (1, ))
+#row = cursor.fetchone()
 
+'''
 id = row[0]
 first = row[1]
 last = row[2]
@@ -21,4 +22,5 @@ print(str(id) + " " + first + " " + last)
 
 e = Employee(first, last)
 print(e)
+'''
 
